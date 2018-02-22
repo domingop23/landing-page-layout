@@ -1,0 +1,179 @@
+/* ----- Reset -----*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{box-sizing:border-box;}
+
+/* ----- Layout -----*/
+body{
+    text-align: center;
+    font: 300 20px/1.7 'Roboto Condensed';
+}  
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    background: url(../img/dummy-header.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    background-color: #acc233;
+    border-bottom: 2px dashed #d6e199;
+}
+    .navbar a{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 20px;
+        font: 20px 'Stint Ultra Condensed';
+    }
+
+.tarifas{
+    text-align: left;
+    height: 450px;
+    background: url(../img/dummy-tarifas.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+}
+    .tarifas p{
+        max-width: 450px;
+    }
+    .contain{
+        max-width: 1055px;
+        margin: 0 auto;
+    }
+    .btn{
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 40px;
+    }
+
+.tratamientos{
+    background-color: #566119;
+    color: #fff;
+}
+    .list-tratamientos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-tratamientos figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        position: relative;
+        height: 100px;
+        width: 100px
+    }
+    .list-tratamientos figure:after{
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background: #fff;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    .list-tratamientos img{
+        position: relative;
+        z-index: 1;
+    }
+    .list-tratamientos li{
+        padding: 0 30px;
+    }
+    .list-tratamientos figcaption{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -40px;
+    } 
+
+.title{
+    font: 60px 'Stint Ultra Condensed';
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+.content{
+    padding: 80px 0;
+}
+
+.quienes-somos{
+    background-color: #acc233;
+    color: #fff;
+}
+    .quienes-somos p{
+        max-width: 1055px;
+        margin: 0 auto;
+    }
+    
+.localizacion{
+    color: #566119;
+    padding-bottom: 0;
+}
+    .localizacion .map img{
+        max-width: 100%;
+        width: 100%;
+    }
